@@ -1,0 +1,4 @@
+cms
+===
+
+Static CMS UI
