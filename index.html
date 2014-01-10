@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Corey's Tools</title>
+	<link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+  <div id="signin-button">
+     <div class="g-signin"
+      data-callback="loginFinishedCallback"
+      data-approvalprompt="auto"
+      data-clientid="10662824810-7b8jnvke51cb4oclgur1pnsks9f1n7c6.apps.googleusercontent.com"
+      data-scope="https://www.googleapis.com/auth/plus.profile.emails.read"
+      data-height="long"
+			data-redirect="http://localhost:8080/auth/google/callback"
+      data-cookiepolicy="single_host_origin"
+      >
+    </div>
+    <!-- In most cases, you don't want to use approvalprompt=force. Specified
+    here to facilitate the demo.-->
+  </div>
+
+  <div id="shell" class="hide">
+    <div id="editor">
+			<div id="pages" class="hide">
+			</div>
+			<div class="toolbar">
+				<div class="hint--bounce hint--rounded hint--right" data-hint="Pages"><div class="icon-folder-open-empty"></div></div>
+				<div id="pagetitle" contenteditable="false"></div>
+				<div class="hint--bounce hint--rounded hint--bottom" data-hint="Save (ctrl+s)"><div class="icon-floppy"></div></div>
+				<div class="hint--bounce hint--rounded hint--bottom" data-hint="Publish (ctrl+shift)"><div class="icon-upload-cloud-outline"></div></div>
+				<div class="hint--bounce hint--rounded hint--bottom" data-hint="Logout"><div class="icon-logout" style="color: #5e4848 !important;"></div></div>
+				<!--<button onclick="test();">Test Github</button>-->
+			</div>
+			<div id="ide"></div>
+			<div class="idemask"></div>
+			<div class="footertoolbar">
+				<div class="hint--bounce hint--rounded hint--left" data-hint="Show Help (Quickview: Hold ctrl+m)"><div class="icon-help"></div></div>
+			</div>
+			<div class="mask hide"></div>
+		</div>
+		<div id="preview">
+			<div></div>
+			<div class="helpmenu hide">
+				<a href="javascript:toggleHelp();" class="close">&times;</a>
+				<div>
+					<h3>Headers</h3>
+					<p>Use # next to a header. The more # signs, the smaller the header.</p>
+					<pre># Header 1 (h1)</pre>
+					<pre>## Header 2 (h2)</pre>
+					<pre>### Header 3 (h3) </pre>
+					<p>...</p>
+					<hr/>
+					<h3>Text</h3>
+					<p>Markdown supports <b>bold</b> and <em>italic</em> text.</p>
+					<p><pre style="float: left;">**text**</pre> = <b>text</b></p>
+					<p><pre style="float: left;">__text__</pre> = <b>text</b></p>
+					<p><pre style="float: left;">_text_</pre> = <i>text</i></p>
+					<p><pre style="float: left;">*text*</pre> = <i>text</i></p>
+					<p>You can also create links for specific text. The format is:</p>
+					<pre>[title](http://mylink.com)</pre>
+					<p>Linking to google might look like:</p>
+					<pre>Go to [Google](http://www.google.com)</pre>
+					<p>Go to <a href="http://www.google.com" style="color:gold;">Google</a></p>
+					<hr/>
+					<h3>Pictures</h3>
+					<p>Adding a picture is just like adding a link, except it has an exclamation point first:</p>
+					<pre>![The Google Logo](https://www.google.com/images/srpr/logo11w.png)</pre>
+					<img src="https://www.google.com/images/srpr/logo11w.png" alt="The Google Logo" height="50" vspace="6"/>
+					<hr/>
+					<h3>Lists</h3>
+					<p>Creating lists simply requires a dash where you want the bullet point.</p>
+					<pre>- Item A</pre>
+					<pre>- Item B</pre>
+					<pre>- Item C</pre>
+					<p>Renders:</p>
+					<li>Item A</li>
+					<li>Item B</li>
+					<li>Item C</li>
+					<p>Creating numbered lists simply requires typing the number and a period.</p>
+					<pre>1. Item A</pre>
+					<pre>2. Item B</pre>
+					<pre>3. Item C</pre>
+					<p>Renders:</p>
+					<ol>
+						<li>Item A</li>
+						<li>Item B</li>
+						<li>Item C</li>
+					</ol>
+					<hr/>
+					<h3>Horizontal Line</h3>
+					<p>A horizontal line is created using three dashes:</p>
+					<pre>---</pre>
+					<hr/>
+					<h3>Advanced Use</h3>
+					<p>This tool supports GFM.</p>
+				</div>
+			</div>
+		</div>
+  </div>
+	<div id="noticebar" class="hide">
+		<a href="">&times;</a>
+		<div></div>
+	</div>
+	<script type="text/javascript" src="js/editor.js"></script>>
+  <script src="https://apis.google.com/js/client:plusone.js" type="text/javascript"></script>
+</body>
+</html>
