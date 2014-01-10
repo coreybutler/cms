@@ -1,4 +1,0 @@
-cms
-===
-
-Static CMS UI
