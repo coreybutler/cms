@@ -7,6 +7,9 @@ var load = function(src, callback) {
 	var script = document.createElement('script'),
 			loaded;
 	script.setAttribute('src', src);
+	script.setAttribute('charset','utf-8');
+	script.setAttribute('type','text/javascript');
+																				
 	if (callback) {
 		script.onreadystatechange = script.onload = function() {
 			if (!loaded) {
