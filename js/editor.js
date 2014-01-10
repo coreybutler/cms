@@ -1,4 +1,4 @@
-var metaurl="http://cmsapi.coreybutler.com",
+var metaurl="http://localhost:8080",
 		prettyrepo = {},
 		files = {},
 		profile, email, repo, newRepo, id, gh,  editing, originaltext;
